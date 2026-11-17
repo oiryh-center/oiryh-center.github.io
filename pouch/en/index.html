@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pouch — Out of your head, into the notch</title>
+  <meta name="description" content="Pouch lets you jot down whatever comes to mind right in your Mac's notch, then sort it by whether it's urgent and whether it's in your control.">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/pouch/assets/intro.css">
+  <link rel="icon" href="/pouch/assets/icon.png">
+  <link rel="alternate" hreflang="ko" href="/pouch/">
+  <script src="/pouch/assets/intro.js"></script>
+</head>
+<body class="intro">
+<div class="stage">
+  <section class="welcome">
+    <picture><source srcset="/pouch/assets/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="/pouch/assets/icon.png" alt=""></picture>
+    <h1>Pouch</h1>
+    <p>A Mac app for writing down whatever comes to mind, right in the notch, and sorting it by what's urgent and what's in your control.</p>
+  </section>
+
+  <div class="screen">
+    <button class="notch" type="button" aria-expanded="false" aria-controls="window" aria-label="Click the notch to open Pouch">
+      <span class="hint">What's on your mind?</span>
+      <span class="panel" aria-hidden="true">
+        <span class="input"><span class="typed" data-text="Can't stop thinking about tomorrow's talk"></span><span class="caret"></span></span>
+        <span class="label">Inbox</span>
+        <span class="ncard">Hover over the notch, type, press Return</span>
+        <span class="ncard">Thoughts land in the Inbox. Sort them in the main window</span>
+      </span>
+    </button>
+    <section class="window" id="window" aria-label="Pouch main window">
+    <div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>Pouch</div>
+    <div class="toolbar" aria-hidden="true">
+      Sort <span class="seg"><span>Newest</span><span>A–Z</span><span class="on">Manual</span></span>
+      <span class="sync">Card text is encrypted, in your iCloud only</span>
+    </div>
+    <div class="winput" aria-hidden="true">What's on your mind?</div>
+    <div class="grid">
+      <section class="area inbox">
+        <h2>Inbox</h2>
+        <p>Everything you write in the notch lands here first<small>Sorting can wait</small></p>
+        <p>Drag cards into the four boxes<small>Just decide: is it urgent, and can you do something about it?</small></p>
+      </section>
+      <section class="area">
+        <h2>Urgent · Can Do</h2>
+        <p>What you can do now<small>Zoom in on this box and focus on just this</small></p>
+      </section>
+      <section class="area">
+        <h2>Urgent · Can't Do</h2>
+        <p>What you're waiting on<small>Write it down and get on with something else while you wait</small></p>
+      </section>
+      <section class="area">
+        <h2>Not Urgent · Can Do</h2>
+        <p>For later<small>Just keep it from slipping your mind</small></p>
+      </section>
+      <section class="area">
+        <h2>Not Urgent · Can't Do</h2>
+        <p>Worries to let be<small>For things you can't control, writing them down is enough</small></p>
+      </section>
+    </div>
+  </section>
+  </div>
+
+  <footer class="after">
+    <p>Requires macOS 26 or later. Designed for MacBooks with a notch.</p>
+    <nav><a href="/pouch/en/privacy/">Privacy Policy</a><a href="/pouch/en/support/">Support</a><a href="/pouch/" lang="ko">한국어</a></nav>
+  </footer>
+</div>
+</body>
+</html>

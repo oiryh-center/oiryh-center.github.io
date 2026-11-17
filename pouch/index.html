@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pouch — 머릿속 생각을 노치에</title>
+  <meta name="description" content="Pouch는 떠오른 생각을 Mac 노치에 바로 적고, 급한지와 할 수 있는지로 나눠 두는 앱입니다.">
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/pouch/assets/intro.css">
+  <link rel="icon" href="/pouch/assets/icon.png">
+  <link rel="alternate" hreflang="en" href="/pouch/en/">
+  <script src="/pouch/assets/intro.js"></script>
+</head>
+<body class="intro">
+<div class="stage">
+  <section class="welcome">
+    <picture><source srcset="/pouch/assets/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="/pouch/assets/icon.png" alt=""></picture>
+    <h1>Pouch</h1>
+    <p>떠오른 생각을 노치에 바로 적어 두고, 급한지와 할 수 있는지로 나눠 마음을 가볍게 하는 Mac 앱</p>
+  </section>
+
+  <div class="screen">
+    <button class="notch" type="button" aria-expanded="false" aria-controls="window" aria-label="노치를 눌러 Pouch 열기">
+      <span class="hint">떠오른 생각을 적어 보세요</span>
+      <span class="panel" aria-hidden="true">
+        <span class="input"><span class="typed" data-text="내일 발표가 자꾸 신경 쓰여"></span><span class="caret"></span></span>
+        <span class="label">Inbox</span>
+        <span class="ncard">노치에 마우스를 올리고, 적고, Return</span>
+        <span class="ncard">적은 생각은 Inbox에 담겨요. 나누는 건 메인 창에서</span>
+      </span>
+    </button>
+    <section class="window" id="window" aria-label="Pouch 메인 창">
+    <div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>Pouch</div>
+    <div class="toolbar" aria-hidden="true">
+      정렬 <span class="seg"><span>최신순</span><span>가나다순</span><span class="on">수동</span></span>
+      <span class="sync">카드 내용은 암호화되어 내 iCloud에만</span>
+    </div>
+    <div class="winput" aria-hidden="true">떠오른 생각을 적어 보세요</div>
+    <div class="grid">
+      <section class="area inbox">
+        <h2>Inbox</h2>
+        <p>노치에 적은 생각은 먼저 여기에 모여요<small>정리는 나중에 해도 괜찮아요</small></p>
+        <p>카드를 끌어 네 칸으로 나눠요<small>급한지, 내가 할 수 있는지만 정하면 돼요</small></p>
+      </section>
+      <section class="area">
+        <h2>시급 · 할 수 있음</h2>
+        <p>지금 할 수 있는 일<small>칸을 크게 펼쳐 이것만 보며 집중해요</small></p>
+      </section>
+      <section class="area">
+        <h2>시급 · 할 수 없음</h2>
+        <p>기다리는 일<small>결과를 기다리는 동안 적어 두고 다른 일을 해요</small></p>
+      </section>
+      <section class="area">
+        <h2>여유 · 할 수 있음</h2>
+        <p>나중에 할 일<small>잊지 않게만 두면 돼요</small></p>
+      </section>
+      <section class="area">
+        <h2>여유 · 할 수 없음</h2>
+        <p>그대로 두는 걱정<small>어쩔 수 없는 일은 적어 두는 것만으로 충분해요</small></p>
+      </section>
+    </div>
+  </section>
+  </div>
+
+  <footer class="after">
+    <p>macOS 26 이상. 노치가 있는 MacBook에 맞춰 만들었습니다.</p>
+    <nav><a href="/pouch/privacy/">개인정보 처리방침</a><a href="/pouch/support/">지원</a><a href="/pouch/en/" lang="en">English</a></nav>
+  </footer>
+</div>
+</body>
+</html>
