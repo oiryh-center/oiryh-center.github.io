@@ -139,7 +139,26 @@ body.intro { overflow-x: hidden; }
 
 @keyframes blink { 50% { opacity: 0; } }
 
-.panel .label { display: block; font-size: 12px; color: #8e8e93; font-weight: 600; margin-top: 4px; }
+.panel .label { display: flex; justify-content: space-between; font-size: 12px; color: #8e8e93; font-weight: 600; margin-top: 4px; }
+.panel .cards { display: grid; gap: 8px; }
+
+/* 문장을 다 적으면 입력칸이 빛나 한 번 더 누르게 한다. */
+.notch.ready { cursor: pointer; }
+.notch.ready .input { animation: ready 1.6s ease-in-out infinite; }
+
+@keyframes ready {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(10, 132, 255, 0.25); }
+  50% { box-shadow: 0 0 0 1px rgba(10, 132, 255, 0.7), 0 0 16px 2px rgba(10, 132, 255, 0.35); }
+}
+
+/* 저장한 문장이 입력칸에서 Inbox 맨 위로 내려앉는다. */
+.panel .ncard.new { animation: drop 0.45s var(--ease) both; }
+
+@keyframes drop {
+  from { opacity: 0; translate: 0 -46px; scale: 0.97; }
+}
+
+.area p.new { animation: appear 0.5s 0.15s var(--ease) both; }
 
 .panel .ncard {
   display: block;
@@ -282,5 +301,5 @@ body.intro { overflow-x: hidden; }
   .notch, .notch .panel, .notch .hint, .screen { transition: none !important; }
   .js .notch[aria-expanded="false"]:not(:hover):not(:focus-visible) { animation: none; box-shadow: 0 5px 18px 0 rgba(10, 132, 255, 0.3); }
   .window { animation: none !important; }
-  .panel .caret { animation: none; }
+  .panel .caret, .notch.ready .input, .panel .ncard.new, .area p.new { animation: none; }
 }

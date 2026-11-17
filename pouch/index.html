@@ -24,9 +24,10 @@
       <span class="hint">떠오른 생각을 적어 보세요</span>
       <span class="panel" aria-hidden="true">
         <span class="input"><span class="typed" data-text="내일 발표가 자꾸 신경 쓰여"></span><span class="caret"></span></span>
-        <span class="label">Inbox</span>
+        <span class="label">Inbox<span class="more"></span></span>
+        <span class="cards">
         <span class="ncard">노치에 마우스를 올리고, 적고, Return</span>
-        <span class="ncard">적은 생각은 Inbox에 담겨요. 나누는 건 메인 창에서</span>
+        <span class="ncard">적은 생각은 Inbox에 담겨요. 나누는 건 메인 창에서</span></span>
       </span>
     </button>
     <section class="window" id="window" aria-label="Pouch 메인 창">
@@ -37,7 +38,7 @@
     </div>
     <div class="winput" aria-hidden="true">떠오른 생각을 적어 보세요</div>
     <div class="grid">
-      <section class="area inbox">
+      <section class="area inbox" id="inbox">
         <h2>Inbox</h2>
         <p>노치에 적은 생각은 먼저 여기에 모여요<small>정리는 나중에 해도 괜찮아요</small></p>
         <p>카드를 끌어 네 칸으로 나눠요<small>급한지, 내가 할 수 있는지만 정하면 돼요</small></p>
